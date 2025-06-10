@@ -57,9 +57,9 @@ public class Main {
         System.out.println("Enter author:");
         String author = scanner.nextLine();
         System.out.println("Enter year:");
-        int year = scanner.nextInt();
+        int year = Integer.parseInt(scanner.nextLine());
         System.out.println("Enter page count:");
-        int pageCount = scanner.nextInt();
+        int pageCount = Integer.parseInt(scanner.nextLine());
 
         library.add(new Book(title, author, year, pageCount));
     }
@@ -70,9 +70,9 @@ public class Main {
         System.out.println("Enter author:");
         String author = scanner.nextLine();
         System.out.println("Enter year:");
-        int year = scanner.nextInt();
+        int year = Integer.parseInt(scanner.nextLine());
         System.out.println("Enter track count:");
-        int trackCount = scanner.nextInt();
+        int trackCount = Integer.parseInt(scanner.nextLine());
 
         library.add(new Album(title, author, year, trackCount));
     }
@@ -82,10 +82,12 @@ public class Main {
         String title = scanner.nextLine();
         System.out.println("Enter author:");
         String author = scanner.nextLine();
+
         System.out.println("Enter year:");
-        int year = scanner.nextInt();
-        System.out.println("Enter duration in minutes:");
-        int durationInMinutes = scanner.nextInt();
+        int year = Integer.parseInt(scanner.nextLine());
+
+        System.out.println("Enter duration in minutes: ");
+        int durationInMinutes = Integer.parseInt(scanner.nextLine());
 
         library.add(new Movie(title, author, year, durationInMinutes));
     }

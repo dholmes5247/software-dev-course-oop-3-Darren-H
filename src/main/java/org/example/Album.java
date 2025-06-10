@@ -4,7 +4,7 @@ public class Album extends LibraryItem {
     protected int trackCount;
 
     //Constructor
-    public Album(String title, int year, String author, int trackCount) {
+    public Album(String title, String author, int year,  int trackCount) {
         // Call the parent constructor
     super(title, year, author);
     //Set this classes fields
@@ -18,7 +18,7 @@ public class Album extends LibraryItem {
 
     @Override
     public String toString() {
-        return "Album: " + title + " by " + author + "(" + year + ") - " + trackCount + "tracks";
+        return "Album: " + title + " by " + author + " (" + year + ") - " + trackCount + " tracks";
     }
 
 }

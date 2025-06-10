@@ -4,7 +4,7 @@ public class Movie extends LibraryItem {
     protected int durationInMinutes;
 
     // constructor
-    public Movie(String title, int year, String author, int durationInMinutes) {
+    public Movie(String title, String author, int year, int durationInMinutes) {
         //Call the parent
         super(title, year, author);
         //Set this class
